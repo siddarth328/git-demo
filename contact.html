@@ -9,25 +9,109 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="index.html">My Portfolio</a>
+        <a class="logo" href="index.html#home">
+            <span class="logo-badge">S</span>
+            <span>Sai Siddharth</span>
+            <span class="logo-tag">Portfolio</span>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
         <nav aria-label="Main navigation">
-            <a href="index.html">Home</a><a href="about.html">About</a>
-            <a href="skills.html">Skills</a><a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="index.html#cars">Car Showcase</a>
+            <a href="contact.html" class="nav-cta active">Contact</a>
         </nav>
     </header>
+
     <main class="page-content">
-        <h2 class="section-title">Contact Me</h2>
-        <p>If you would like to discuss a project, collaboration, or opportunity, you can reach me through the links below.</p>
-        <div class="contact-details">
-            <p><b>Email:</b> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-            <p><b>LinkedIn:</b> <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-profile</a></p>
-            <p><b>GitHub:</b> <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">github.com/your-username</a></p>
+        <div class="section-header">
+            <span class="section-pill">GET IN TOUCH</span>
+            <h2 class="section-title">Contact Sai Siddharth</h2>
+            <p class="section-subtitle">Reach out for collaborations, project inquiries, or discussing technology and automotive ideas.</p>
         </div>
-        <a href="mailto:your-email@example.com" class="btn">Send Me an Email</a>
-        <p><small>Replace the example email, LinkedIn, and GitHub details with your actual profile links.</small></p>
-        <a class="back-link" href="index.html">← Back to Home</a>
+
+        <div class="contact-container">
+            <div class="contact-info-col">
+                <a href="mailto:your-email@example.com" class="contact-card">
+                    <div class="contact-card-icon cyan">✉️</div>
+                    <div class="contact-card-text">
+                        <div class="contact-card-label">Email Address</div>
+                        <div class="contact-card-value">your-email@example.com</div>
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-card-icon blue">💼</div>
+                    <div class="contact-card-text">
+                        <div class="contact-card-label">LinkedIn Profile</div>
+                        <div class="contact-card-value">linkedin.com/in/your-profile</div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-card-icon purple">💻</div>
+                    <div class="contact-card-text">
+                        <div class="contact-card-label">GitHub Repository</div>
+                        <div class="contact-card-value">github.com/your-username</div>
+                    </div>
+                </a>
+
+                <div class="contact-card" style="cursor: default;">
+                    <div class="contact-card-icon orange">📍</div>
+                    <div class="contact-card-text">
+                        <div class="contact-card-label">Location & Status</div>
+                        <div class="contact-card-value">India • Available for Opportunities</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h3>Send Me a Message</h3>
+                <p>Have an inquiry or project proposal? Fill out the details below.</p>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="formName">Your Full Name</label>
+                        <input type="text" id="formName" class="form-input" placeholder="e.g. John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formEmail">Your Email Address</label>
+                        <input type="email" id="formEmail" class="form-input" placeholder="e.g. john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formSubject">Subject</label>
+                        <input type="text" id="formSubject" class="form-input" placeholder="e.g. Project Inquiry / Collaboration" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formMessage">Your Message</label>
+                        <textarea id="formMessage" class="form-textarea" placeholder="Tell me about your project or idea..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit-btn">
+                        <span>Send Message</span>
+                        <span>🚀</span>
+                    </button>
+
+                    <div id="formStatus" class="form-status-msg"></div>
+                </form>
+            </div>
+        </div>
+
+        <a class="back-link" href="index.html">← Back to Full Home Page</a>
     </main>
-    <footer><p>© <span data-current-year>2026</span> Sai Siddharth | All Rights Reserved</p></footer>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© <span data-current-year>2026</span> Sai Siddharth | All Rights Reserved</p>
+            <p><a href="index.html" style="color: var(--cyan); text-decoration: none;">Explore Home</a></p>
+        </div>
+    </footer>
 </body>
 </html>
