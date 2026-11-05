@@ -3,29 +3,588 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Sai Siddharth</title>
+    <title>Sai Siddharth | Developer Portfolio & Automotive Tech</title>
+    <meta name="description" content="Portfolio of Sai Siddharth - Computer Science Student, Full-Stack Developer, and Automotive Enthusiast showcasing web projects, AI systems, and high-performance car engineering.">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <!-- Top Navigation Header -->
     <header>
-        <a class="logo" href="index.html">My Portfolio</a>
+        <a class="logo" href="#home">
+            <span class="logo-badge">S</span>
+            <span>Sai Siddharth</span>
+            <span class="logo-tag">Portfolio</span>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
         <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#cars">Car Showcase</a>
+            <a href="#contact" class="nav-cta">Contact Me</a>
         </nav>
     </header>
+
     <main>
-        <section class="home-content">
-            <h1>Hi, I'm Sai Siddharth</h1>
-            <h2>Computer Science Student</h2>
-            <p>I am a passionate developer interested in web development, problem-solving, and building innovative applications.</p>
-            <a href="projects.html" class="btn">View My Projects</a>
+        <!-- ==========================================
+             1. HERO SECTION
+             ========================================== -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    <span>Available for Projects & Internships</span>
+                </div>
+
+                <h1>Hi, I'm <span class="gradient-text">Sai Siddharth</span></h1>
+                <h2>Computer Science Student & Developer</h2>
+                <p>
+                    Passionate developer dedicated to web technologies, embedded intelligence, and solving real-world challenges. Inspired by algorithmic precision and the high-speed engineering of performance automobiles.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Projects</span>
+                        <span>→</span>
+                    </a>
+                    <a href="#cars" class="btn btn-outline-orange">
+                        <span>🏎️ Explore Cars</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Let's Talk</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">Core Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Passion & Speed</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual: Featured Car & High-Tech Card -->
+            <div class="hero-visual">
+                <!-- Floating badge top-left -->
+                <div class="floating-badge badge-top-left">
+                    <div class="badge-icon cyan">⚡</div>
+                    <div class="badge-text">
+                        <span class="badge-title">High Performance</span>
+                        <span class="badge-sub">Speed & Clean Code</span>
+                    </div>
+                </div>
+
+                <div class="hero-car-card">
+                    <img src="images/car-hero.jpg" alt="Exotic High-Performance Sports Car" loading="eager">
+                    <div class="hero-car-overlay">
+                        <span class="hero-car-tag">Featured Machine</span>
+                        <div class="hero-car-title">Precision Meets Speed</div>
+                        <div class="hero-car-desc">Twin-turbo dynamics, aerodynamic carbon fiber bodywork, and intelligent telemetry.</div>
+                    </div>
+                </div>
+
+                <!-- Floating badge bottom-right -->
+                <div class="floating-badge badge-bottom-right">
+                    <div class="badge-icon orange">🏁</div>
+                    <div class="badge-text">
+                        <span class="badge-title">0 - 100 km/h</span>
+                        <span class="badge-sub">Pure Acceleration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             2. ABOUT ME SECTION
+             ========================================== -->
+        <section id="about">
+            <div class="section-header">
+                <span class="section-pill">ABOUT ME</span>
+                <h2 class="section-title">Engineering Mindset & Digital Innovation</h2>
+                <p class="section-subtitle">
+                    Discover my academic background, technical passions, and the drive to build impactful digital products.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a <strong>BTech Computer Science student</strong> with a solid grounding in software design, algorithmic thinking, and modern web development. From full-stack websites to micro-controller systems, I love building technology that delivers tangible real-world value.
+                    </p>
+                    <p>
+                        When I'm not writing code or debugging software, I immerse myself in automotive engineering and motorsport technology. The synergy between high-performance automotive telematics, computer vision, and autonomous vehicle sensors fuels my creative thinking and problem-solving skills.
+                    </p>
+                    <div style="margin-top: 25px;">
+                        <a href="#contact" class="btn btn-primary">Connect with Me</a>
+                    </div>
+                </div>
+
+                <div class="about-cards-grid">
+                    <article class="info-card">
+                        <div class="info-card-icon">🎓</div>
+                        <h3>Education</h3>
+                        <p><strong>BTech in Computer Science</strong> with coursework covering Data Structures, Web Development, Databases, and Systems.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="info-card-icon">💻</div>
+                        <h3>Technical Interests</h3>
+                        <p>Modern Web Applications, Artificial Intelligence, Embedded Hardware (Arduino/Raspberry Pi), and Image Processing.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="info-card-icon">🎯</div>
+                        <h3>Core Goal</h3>
+                        <p>To craft resilient, scalable software applications and work on cutting-edge innovations that redefine mobility and technology.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="info-card-icon">🏎️</div>
+                        <h3>Automotive Passion</h3>
+                        <p>Enthusiast for supercar aerodynamics, vehicle dynamics, road safety intelligence, and digital cockpit user experiences.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             3. SKILLS SECTION
+             ========================================== -->
+        <section id="skills">
+            <div class="section-header">
+                <span class="section-pill purple">TECH STACK</span>
+                <h2 class="section-title">Skills & Technical Arsenal</h2>
+                <p class="section-subtitle">
+                    The programming languages, frameworks, hardware kits, and tools I use to bring ideas to reality.
+                </p>
+            </div>
+
+            <div class="skills-container">
+                <!-- Frontend Card -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon cyan">🌐</div>
+                        <h3>Web & Frontend</h3>
+                    </div>
+                    <div class="skill-pill-list">
+                        <span class="skill-pill"><span class="skill-pill-dot"></span>HTML5</span>
+                        <span class="skill-pill"><span class="skill-pill-dot"></span>CSS3 / Styling</span>
+                        <span class="skill-pill"><span class="skill-pill-dot"></span>JavaScript (ES6+)</span>
+                        <span class="skill-pill"><span class="skill-pill-dot"></span>React.js</span>
+                        <span class="skill-pill"><span class="skill-pill-dot"></span>Responsive UI</span>
+                        <span class="skill-pill"><span class="skill-pill-dot"></span>DOM Manipulation</span>
+                    </div>
+                </div>
+
+                <!-- Languages & Backend Card -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon purple">⚙️</div>
+                        <h3>Languages & Backend</h3>
+                    </div>
+                    <div class="skill-pill-list">
+                        <span class="skill-pill"><span class="skill-pill-dot purple"></span>Python</span>
+                        <span class="skill-pill"><span class="skill-pill-dot purple"></span>C Language</span>
+                        <span class="skill-pill"><span class="skill-pill-dot purple"></span>C++</span>
+                        <span class="skill-pill"><span class="skill-pill-dot purple"></span>PHP</span>
+                        <span class="skill-pill"><span class="skill-pill-dot purple"></span>Object-Oriented Programming</span>
+                        <span class="skill-pill"><span class="skill-pill-dot purple"></span>Data Structures</span>
+                    </div>
+                </div>
+
+                <!-- Databases Card -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon emerald">🗄️</div>
+                        <h3>Database & Tools</h3>
+                    </div>
+                    <div class="skill-pill-list">
+                        <span class="skill-pill"><span class="skill-pill-dot emerald"></span>MySQL</span>
+                        <span class="skill-pill"><span class="skill-pill-dot emerald"></span>Relational DB Design</span>
+                        <span class="skill-pill"><span class="skill-pill-dot emerald"></span>Git & GitHub</span>
+                        <span class="skill-pill"><span class="skill-pill-dot emerald"></span>VS Code</span>
+                        <span class="skill-pill"><span class="skill-pill-dot emerald"></span>RESTful Concepts</span>
+                    </div>
+                </div>
+
+                <!-- Hardware & AI Card -->
+                <div class="skill-category-card">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon orange">🤖</div>
+                        <h3>Embedded & AI</h3>
+                    </div>
+                    <div class="skill-pill-list">
+                        <span class="skill-pill"><span class="skill-pill-dot orange"></span>Arduino IDE</span>
+                        <span class="skill-pill"><span class="skill-pill-dot orange"></span>Raspberry Pi</span>
+                        <span class="skill-pill"><span class="skill-pill-dot orange"></span>MATLAB</span>
+                        <span class="skill-pill"><span class="skill-pill-dot orange"></span>Xception Neural Net</span>
+                        <span class="skill-pill"><span class="skill-pill-dot orange"></span>Image Processing</span>
+                        <span class="skill-pill"><span class="skill-pill-dot orange"></span>Automotive Sensors</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             4. PROJECTS SECTION
+             ========================================== -->
+        <section id="projects">
+            <div class="section-header">
+                <span class="section-pill">FEATURED WORK</span>
+                <h2 class="section-title">Projects & Systems Built</h2>
+                <p class="section-subtitle">
+                    Practical applications, safety hardware prototypes, and machine learning solutions I have developed.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Blood Bank Management -->
+                <article class="project-card">
+                    <div class="project-header-bar"></div>
+                    <div class="project-body">
+                        <span class="project-badge">Web Application</span>
+                        <h3>Blood Bank Management System</h3>
+                        <p class="project-desc">
+                            A dynamic web portal connecting blood donors, hospitals, and blood banks during critical medical emergencies. Streamlines search, request workflows, and inventory tracking.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Real-time donor discovery and group categorization</li>
+                            <li>Automated hospital inventory tracking module</li>
+                            <li>Secure authentication for donors and medical staff</li>
+                        </ul>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Wrong Route Prevention (Automotive Connected) -->
+                <article class="project-card">
+                    <div class="project-header-bar orange"></div>
+                    <div class="project-body">
+                        <span class="project-badge orange">Automotive Safety & IoT</span>
+                        <h3>Wrong Route Prevention System</h3>
+                        <p class="project-desc">
+                            An intelligent vehicle safety system designed to detect vehicles traveling in the wrong direction on highways and one-way lanes to eliminate catastrophic head-on collisions.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Real-time directional velocity sensing via sensors</li>
+                            <li>Automated alert sounders, strobe indicators, and roadside alerts</li>
+                            <li>Microcontroller logic for rapid milliseconds response</li>
+                        </ul>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">C Language</span>
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">Sensors & Relays</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Fake Currency Detection -->
+                <article class="project-card">
+                    <div class="project-header-bar purple"></div>
+                    <div class="project-body">
+                        <span class="project-badge purple">AI & Computer Vision</span>
+                        <h3>Fake Currency Detection</h3>
+                        <p class="project-desc">
+                            A machine learning vision model trained to verify Indian currency notes by extracting security threads, watermarks, micro-lettering, and latent patterns.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Deep feature extraction utilizing Xception CNN architecture</li>
+                            <li>High-speed image processing for security features</li>
+                            <li>High accuracy classification against forged counterfeits</li>
+                        </ul>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">MATLAB</span>
+                            <span class="tech-tag">Xception CNN</span>
+                            <span class="tech-tag">Image Processing</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             5. CARS & AUTOMOTIVE SHOWCASE SECTION
+             ========================================== -->
+        <section id="cars" class="car-showcase-section">
+            <div class="section-header">
+                <span class="section-pill orange">🏎️ PASSION FOR AUTOMOTIVE</span>
+                <h2 class="section-title">Speed, Design & Car Showcase</h2>
+                <p class="section-subtitle">
+                    Automotive engineering and high-speed aerodynamics inspire my drive for building responsive, high-performance software. Explore my curated gallery of hypercars, motorsport machines, and digital cockpits.
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="car-filter-tabs">
+                <button class="filter-tab active" data-filter="all">All Machines (6)</button>
+                <button class="filter-tab" data-filter="supercar">Supercars</button>
+                <button class="filter-tab" data-filter="motorsport">Motorsport</button>
+                <button class="filter-tab" data-filter="cockpit">Cockpit & Tech</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="car-gallery-grid">
+                <!-- Car 1: Apex Hypercar -->
+                <article class="car-card" data-category="supercar">
+                    <div class="car-img-wrapper">
+                        <span class="car-badge-top orange">Hypercar</span>
+                        <div class="car-zoom-hint">🔍</div>
+                        <img src="images/car-hero.jpg" alt="Exotic Crimson Hypercar" loading="lazy">
+                    </div>
+                    <div class="car-info">
+                        <h4><span class="car-title-text">Apex Hypercar</span></h4>
+                        <p>Aerodynamic carbon-composite bodywork, adaptive active suspension, and lightning dual-clutch transmission.</p>
+                        <div class="car-specs">
+                            <span class="spec-tag">850 HP</span>
+                            <span class="spec-tag">Twin-Turbo V8</span>
+                            <span class="spec-tag">Carbon Monocoque</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Car 2: Track Dominator -->
+                <article class="car-card" data-category="supercar">
+                    <div class="car-img-wrapper">
+                        <span class="car-badge-top cyan">Supercar</span>
+                        <div class="car-zoom-hint">🔍</div>
+                        <img src="images/car-supercar.jpg" alt="Aerodynamic Yellow Performance Supercar" loading="lazy">
+                    </div>
+                    <div class="car-info">
+                        <h4><span class="car-title-text">Track Dominator</span></h4>
+                        <p>Mid-engine layout engineered for razor-sharp apex handling, giant downforce wing, and ceramic brakes.</p>
+                        <div class="car-specs">
+                            <span class="spec-tag">720 HP</span>
+                            <span class="spec-tag">0-100: 2.9s</span>
+                            <span class="spec-tag">Active Aero</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Car 3: Porsche GT Precision -->
+                <article class="car-card" data-category="motorsport">
+                    <div class="car-img-wrapper">
+                        <span class="car-badge-top purple">Motorsport</span>
+                        <div class="car-zoom-hint">🔍</div>
+                        <img src="images/car-porsche.jpg" alt="Porsche GT Pure Sports Car" loading="lazy">
+                    </div>
+                    <div class="car-info">
+                        <h4><span class="car-title-text">GT Precision Machine</span></h4>
+                        <p>The gold standard of sports car handling. Naturally aspirated flat-six scream paired with precision steering feedback.</p>
+                        <div class="car-specs">
+                            <span class="spec-tag">9,000 RPM</span>
+                            <span class="spec-tag">Flat-6 Boxer</span>
+                            <span class="spec-tag">Rear-Engine Balance</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Car 4: Cyber Midnight -->
+                <article class="car-card" data-category="supercar">
+                    <div class="car-img-wrapper">
+                        <span class="car-badge-top orange">Night Edition</span>
+                        <div class="car-zoom-hint">🔍</div>
+                        <img src="images/car-cyberpunk.jpg" alt="Cyberpunk Night Supercar" loading="lazy">
+                    </div>
+                    <div class="car-info">
+                        <h4><span class="car-title-text">Cyber Midnight Edition</span></h4>
+                        <p>Futuristic design lines illuminated in city neon. Sleek, stealthy styling with instant all-wheel torque vectoring.</p>
+                        <div class="car-specs">
+                            <span class="spec-tag">Quad Motor AWD</span>
+                            <span class="spec-tag">Stealth Carbon</span>
+                            <span class="spec-tag">Cyber Aesthetics</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Car 5: Formula Drift Racer -->
+                <article class="car-card" data-category="motorsport">
+                    <div class="car-img-wrapper">
+                        <span class="car-badge-top purple">Track & Drift</span>
+                        <div class="car-zoom-hint">🔍</div>
+                        <img src="images/car-drift.jpg" alt="Motorsport Drift Car with Tire Smoke" loading="lazy">
+                    </div>
+                    <div class="car-info">
+                        <h4><span class="car-title-text">Motorsport Drift Weapon</span></h4>
+                        <p>Wide-body stance, high steering angle kit, and insane power output tuned for high-speed controlled drift slides.</p>
+                        <div class="car-specs">
+                            <span class="spec-tag">1,000+ HP</span>
+                            <span class="spec-tag">Sequential Gearbox</span>
+                            <span class="spec-tag">Track Tuned</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Car 6: Digital Cockpit & Telematics -->
+                <article class="car-card" data-category="cockpit">
+                    <div class="car-img-wrapper">
+                        <span class="car-badge-top cyan">Cockpit Tech</span>
+                        <div class="car-zoom-hint">🔍</div>
+                        <img src="images/car-cockpit.jpg" alt="High-tech digital automotive interior and cockpit" loading="lazy">
+                    </div>
+                    <div class="car-info">
+                        <h4><span class="car-title-text">Digital Telematics Cockpit</span></h4>
+                        <p>Where software touches the driver: HUD displays, real-time CAN-bus telemetry, digital gauges, and automotive OS.</p>
+                        <div class="car-specs">
+                            <span class="spec-tag">OLED Instrument HUD</span>
+                            <span class="spec-tag">CAN Telemetry</span>
+                            <span class="spec-tag">Driver AI</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             6. CONTACT SECTION
+             ========================================== -->
+        <section id="contact">
+            <div class="section-header">
+                <span class="section-pill">GET IN TOUCH</span>
+                <h2 class="section-title">Let's Connect & Collaborate</h2>
+                <p class="section-subtitle">
+                    Have an exciting project, internship opportunity, or want to discuss code and cars? Feel free to reach out!
+                </p>
+            </div>
+
+            <div class="contact-container">
+                <!-- Left: Contact Details Cards -->
+                <div class="contact-info-col">
+                    <a href="mailto:your-email@example.com" class="contact-card">
+                        <div class="contact-card-icon cyan">✉️</div>
+                        <div class="contact-card-text">
+                            <div class="contact-card-label">Email Address</div>
+                            <div class="contact-card-value">your-email@example.com</div>
+                        </div>
+                    </a>
+
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-card-icon blue">💼</div>
+                        <div class="contact-card-text">
+                            <div class="contact-card-label">LinkedIn Profile</div>
+                            <div class="contact-card-value">linkedin.com/in/your-profile</div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-card-icon purple">💻</div>
+                        <div class="contact-card-text">
+                            <div class="contact-card-label">GitHub Repository</div>
+                            <div class="contact-card-value">github.com/your-username</div>
+                        </div>
+                    </a>
+
+                    <div class="contact-card" style="cursor: default;">
+                        <div class="contact-card-icon orange">📍</div>
+                        <div class="contact-card-text">
+                            <div class="contact-card-label">Location & Status</div>
+                            <div class="contact-card-value">India • Open to Relocation & Remote</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3>Send Me a Message</h3>
+                    <p>Fill out the form below and I will respond to your inquiry as soon as possible.</p>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="formName">Your Full Name</label>
+                            <input type="text" id="formName" class="form-input" placeholder="e.g. John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formEmail">Your Email Address</label>
+                            <input type="email" id="formEmail" class="form-input" placeholder="e.g. john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formSubject">Subject</label>
+                            <input type="text" id="formSubject" class="form-input" placeholder="e.g. Project Inquiry / Collaboration" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formMessage">Your Message</label>
+                            <textarea id="formMessage" class="form-textarea" placeholder="Tell me about your project or idea..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit-btn">
+                            <span>Send Message</span>
+                            <span>🚀</span>
+                        </button>
+
+                        <div id="formStatus" class="form-status-msg"></div>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
-    <footer><p>© <span data-current-year>2026</span> Sai Siddharth | All Rights Reserved</p></footer>
+
+    <!-- Lightbox Modal for Car Photo Zoom Preview -->
+    <div id="carLightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Car Photo Preview">
+        <button class="lightbox-close" aria-label="Close Preview">&times;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="High resolution car photography">
+            <div class="lightbox-caption">
+                <div>
+                    <h4 id="lightboxTitle">Car Model</h4>
+                    <p id="lightboxDesc">Engineering specs and details.</p>
+                </div>
+                <span class="hero-car-tag">High Performance</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#home" class="back-to-top" aria-label="Back to Top">↑</a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <a class="logo" href="#home">
+                <span class="logo-badge">S</span>
+                <span>Sai Siddharth</span>
+            </a>
+
+            <div class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#cars">Car Showcase</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span data-current-year>2026</span> Sai Siddharth | Crafted with Passion, Code & Speed</p>
+            <p>Computer Science Undergrad • Aspiring Software Engineer</p>
+        </div>
+    </footer>
 </body>
 </html>

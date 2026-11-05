@@ -3,30 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Sai Siddharth</title>
+    <title>About Me | Sai Siddharth</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <a class="logo" href="index.html">My Portfolio</a>
+        <a class="logo" href="index.html#home">
+            <span class="logo-badge">S</span>
+            <span>Sai Siddharth</span>
+            <span class="logo-tag">Portfolio</span>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
         <nav aria-label="Main navigation">
-            <a href="index.html">Home</a><a href="about.html">About</a>
-            <a href="skills.html">Skills</a><a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html#home">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="index.html#cars">Car Showcase</a>
+            <a href="contact.html" class="nav-cta">Contact</a>
         </nav>
     </header>
+
     <main class="page-content">
-        <h2 class="section-title">About Me</h2>
-        <p>I am a BTech Computer Science student with a strong foundation in programming and web technologies. I enjoy learning new technologies and developing useful applications.</p>
-        <p>I am interested in solving real-world problems through software, exploring new tools, and improving my development skills by building practical projects.</p>
-        <div class="info-grid">
-            <article class="info-card"><h3>Education</h3><p>BTech in Computer Science</p></article>
-            <article class="info-card"><h3>Interests</h3><p>Web development, problem-solving, artificial intelligence, and application development.</p></article>
-            <article class="info-card"><h3>Goal</h3><p>To keep learning and create useful, reliable technology solutions.</p></article>
+        <div class="section-header">
+            <span class="section-pill">BIOGRAPHY</span>
+            <h2 class="section-title">About Sai Siddharth</h2>
+            <p class="section-subtitle">BTech Computer Science student, passionate developer, and automotive tech enthusiast.</p>
         </div>
-        <a class="back-link" href="index.html">← Back to Home</a>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    I am a <strong>BTech Computer Science student</strong> with a strong foundation in programming and modern web technologies. I enjoy learning emerging tools, architecting clean user interfaces, and solving real-world challenges through software engineering.
+                </p>
+                <p>
+                    My technical curiosity spans front-end and back-end web frameworks, relational database architectures, and hardware-software integration using micro-controllers like Arduino and Raspberry Pi.
+                </p>
+                <p>
+                    Beyond computer science, automotive design and motorsport engineering are major inspirations. The intersection of connected vehicle telematics, computer vision, and road safety drives my creative problem solving.
+                </p>
+                <div style="margin-top: 25px;">
+                    <a href="projects.html" class="btn btn-primary">View My Projects →</a>
+                </div>
+            </div>
+
+            <div class="about-cards-grid">
+                <article class="info-card">
+                    <div class="info-card-icon">🎓</div>
+                    <h3>Education</h3>
+                    <p><strong>BTech in Computer Science</strong> with coursework covering Data Structures, Web Development, Databases, and Systems.</p>
+                </article>
+
+                <article class="info-card">
+                    <div class="info-card-icon">💡</div>
+                    <h3>Interests</h3>
+                    <p>Web development, problem-solving, artificial intelligence, IoT embedded systems, and automotive technology.</p>
+                </article>
+
+                <article class="info-card">
+                    <div class="info-card-icon">🎯</div>
+                    <h3>Career Goal</h3>
+                    <p>To continuously learn, innovate, and develop reliable, scalable software solutions that make a positive impact.</p>
+                </article>
+
+                <article class="info-card">
+                    <div class="info-card-icon">🏎️</div>
+                    <h3>Automotive Passion</h3>
+                    <p>Fascinated by aerodynamics, telemetry sensors, vehicle dynamics, and high-performance machines.</p>
+                </article>
+            </div>
+        </div>
+
+        <a class="back-link" href="index.html">← Back to Full Home Page</a>
     </main>
-    <footer><p>© <span data-current-year>2026</span> Sai Siddharth | All Rights Reserved</p></footer>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© <span data-current-year>2026</span> Sai Siddharth | All Rights Reserved</p>
+            <p><a href="index.html" style="color: var(--cyan); text-decoration: none;">Explore Home</a></p>
+        </div>
+    </footer>
 </body>
 </html>

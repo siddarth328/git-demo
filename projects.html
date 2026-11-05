@@ -9,34 +9,111 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="index.html">My Portfolio</a>
+        <a class="logo" href="index.html#home">
+            <span class="logo-badge">S</span>
+            <span>Sai Siddharth</span>
+            <span class="logo-tag">Portfolio</span>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
         <nav aria-label="Main navigation">
-            <a href="index.html">Home</a><a href="about.html">About</a>
-            <a href="skills.html">Skills</a><a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="index.html#cars">Car Showcase</a>
+            <a href="contact.html" class="nav-cta">Contact</a>
         </nav>
     </header>
+
     <main class="page-content">
-        <h2 class="section-title">My Projects</h2>
-        <div class="projects">
+        <div class="section-header">
+            <span class="section-pill">FEATURED WORK</span>
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Real-world applications spanning web software, vehicle safety IoT, and deep learning image detection.</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Blood Bank Management -->
             <article class="project-card">
-                <h3>Blood Bank Management System</h3>
-                <p>A web application that connects blood donors, hospitals, and blood banks during emergencies.</p>
-                <p><b>Technologies:</b> HTML, CSS, JavaScript, PHP, MySQL</p>
+                <div class="project-header-bar"></div>
+                <div class="project-body">
+                    <span class="project-badge">Web Application</span>
+                    <h3>Blood Bank Management System</h3>
+                    <p class="project-desc">
+                        A full-stack web application designed to connect blood donors, recipients, and hospitals seamlessly during critical emergencies. Features donor registration, blood group search, and real-time stock management.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Real-time donor discovery and group categorization</li>
+                        <li>Automated hospital inventory tracking module</li>
+                        <li>Secure authentication for donors and medical staff</li>
+                    </ul>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
             </article>
+
+            <!-- Wrong Route Prevention -->
             <article class="project-card">
-                <h3>Wrong Route Prevention</h3>
-                <p>An AI-based system that detects vehicles travelling in the wrong direction to help prevent road accidents.</p>
-                <p><b>Technologies:</b> C, Arduino, Raspberry Pi</p>
+                <div class="project-header-bar orange"></div>
+                <div class="project-body">
+                    <span class="project-badge orange">Automotive Safety & IoT</span>
+                    <h3>Wrong Route Prevention</h3>
+                    <p class="project-desc">
+                        An intelligent vehicle and highway safety system engineered to detect vehicles travelling in the reverse direction on highways, alerting both the errant driver and incoming traffic to prevent head-on crashes.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Directional velocity sensing using ultrasonic/IR sensors</li>
+                        <li>Immediate audio-visual alert activation to divert wrong-way vehicles</li>
+                        <li>Rapid response embedded logic using C on Arduino & Raspberry Pi</li>
+                    </ul>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">C Language</span>
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">Raspberry Pi</span>
+                        <span class="tech-tag">Sensors & Actuators</span>
+                    </div>
+                </div>
             </article>
+
+            <!-- Fake Currency Detection -->
             <article class="project-card">
-                <h3>Fake Currency Detection</h3>
-                <p>A machine learning project that identifies fake Indian currency using image processing.</p>
-                <p><b>Technologies:</b> MATLAB, Xception</p>
+                <div class="project-header-bar purple"></div>
+                <div class="project-body">
+                    <span class="project-badge purple">AI & Machine Learning</span>
+                    <h3>Fake Currency Detection</h3>
+                    <p class="project-desc">
+                        A machine learning and computer vision framework capable of authenticating Indian currency notes by extracting security threads, watermarks, micro-lettering, and latent patterns.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Deep convolutional feature extraction via Xception CNN</li>
+                        <li>High-throughput multi-feature verification pipeline</li>
+                        <li>High accuracy authentication against counterfeit patterns</li>
+                    </ul>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">Xception CNN</span>
+                        <span class="tech-tag">Image Processing</span>
+                        <span class="tech-tag">Deep Learning</span>
+                    </div>
+                </div>
             </article>
         </div>
-        <a class="back-link" href="index.html">← Back to Home</a>
+
+        <a class="back-link" href="index.html">← Back to Full Home Page</a>
     </main>
-    <footer><p>© <span data-current-year>2026</span> Sai Siddharth | All Rights Reserved</p></footer>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© <span data-current-year>2026</span> Sai Siddharth | All Rights Reserved</p>
+            <p><a href="index.html" style="color: var(--cyan); text-decoration: none;">Explore Home</a></p>
+        </div>
+    </footer>
 </body>
 </html>
