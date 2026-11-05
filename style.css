@@ -1,0 +1,15 @@
+/* Glassmorphism Panel Tokens */
+.glass-panel {
+	background: rgba(30, 41, 59, 0.6);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 14px;
+	box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Glowing Gradient Button */
+.btn-primary {
+	background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+	color: #090d16;
+	box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+}
